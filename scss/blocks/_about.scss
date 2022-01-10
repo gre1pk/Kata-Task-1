@@ -87,14 +87,14 @@
       width: 50%;
       line-height: 20px;
     }
-
-    &--hidden {
+    &--top {
+      margin-bottom: 30px;
+    }
+    &--middle {
       display: none;
 
       @include media-tablet {
-        display: block;
-        margin-top: 50px;
-        display: inline-block;
+        display: inline;
         width: 100%;
       }
       @include media-notbook {
@@ -103,8 +103,10 @@
 
     &--bottom {
       visibility: hidden;
+      display: none;
       @include media-notbook {
         visibility: visible;
+        display: inline;
       }
     }
   }

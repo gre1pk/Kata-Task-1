@@ -270,26 +270,30 @@ html {
   }
 }
 
-.about__text--hidden {
+.about__text--top {
+  margin-bottom: 30px;
+}
+
+.about__text--middle {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .about__text--hidden {
-    display: block;
-    margin-top: 50px;
-    display: inline-block;
+  .about__text--middle {
+    display: inline;
     width: 100%;
   }
 }
 
 .about__text--bottom {
   visibility: hidden;
+  display: none;
 }
 
 @media (min-width: 1120px) {
   .about__text--bottom {
     visibility: visible;
+    display: inline;
   }
 }
 
