@@ -57,6 +57,13 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  cursor: pointer;
+}
+
 .page {
   font-family: "TTLakes-Regular", "Arial", sans-serif;
   margin: 0 auto;
@@ -81,7 +88,7 @@ html {
   }
 }
 
-.hamburger {
+.burger {
   width: 40px;
   height: 40px;
   background-image: url(../assets/img/ic/burger.svg);
@@ -202,16 +209,14 @@ html {
             justify-content: space-between;
     width: 400px;
   }
-  .about__icon-list li {
+  .about__icon-list button {
+    background-color: #f8f8f8;
     font-size: 16px;
     line-height: 24px;
     width: 176px;
     padding-right: 40px;
     background-repeat: no-repeat;
     background-position: right;
-  }
-  .about__icon-list li span {
-    vertical-align: sub;
   }
 }
 
