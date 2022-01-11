@@ -1,0 +1,73 @@
+.burger {
+  background-image: url(../assets/img/ic/burger.svg);
+  margin-right: 16px;
+}
+.burger-menu.active {
+  display: block;
+}
+.burger-menu {
+  // display: none;
+  position: absolute;
+  background-color: $lite-color;
+  width: 320px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0 100vh rgba(255, 255, 255, 0.9);
+  &__wrapper {
+    padding: 24px 24px 32px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__close {
+    background-image: url(../assets/img/ic/close.svg);
+    margin-right: 16px;
+    border: none;
+  }
+  &__search {
+    background-image: url(../assets/img/ic/search.svg);
+    margin: 0 0 0 auto;
+  }
+  &__list {
+    margin: 20px 0 32px;
+  }
+  &__item {
+    padding-bottom: 24px;
+
+    & a {
+      letter-spacing: -0.2px;
+      color: $text-color;
+    }
+  }
+  &__item:last-child {
+    padding-bottom: 0;
+  }
+  &__email {
+    margin-top: 16px;
+    & a {
+      letter-spacing: -0.2px;
+      color: $text-color;
+    }
+  }
+
+  &__phone {
+    margin-top: 12px;
+    & a {
+      font-family: $font-bold;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.6px;
+      color: $text-color;
+    }
+  }
+  &__lang-list {
+    display: flex;
+    margin-top: 40px;
+  }
+  &__lang-item {
+    padding-right: 7px;
+  }
+}

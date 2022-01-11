@@ -29,3 +29,8 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+button {
+  border: none;
+  background-color: $lite-color;
+  padding: 0;
+}

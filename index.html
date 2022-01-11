@@ -10,10 +10,7 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <span class="hamburger">
-          <span class="hamburger__line"></span>
-        </span>
-        <nav class="main-nav"></nav>
+        <button class="burger modal-icon__icon-item"></button>
         <a class="page-header__logo"
           ><img height="50" src="./assets/img/logo.svg" alt="logo"
         /></a>
@@ -24,16 +21,59 @@
       </div>
     </header>
     <main class="page__main">
+      <div class="burger-menu burger-menu__wrapper">
+        <div class="burger-menu__header">
+          <button class="burger-menu__close modal-icon__icon-item"></button>
+          <a class="burger-menu__logo"
+            ><img height="50" src="./assets/img/logo.svg" alt="logo"
+          /></a>
+          <button class="burger-menu__search modal-icon__icon-item"></button>
+        </div>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item burger-menu__item--active">
+            <a href="#">Ремонт техники</a>
+          </li>
+          <li class="burger-menu__item"><a href="#">Услуги и сервисы</a></li>
+          <li class="burger-menu__item">
+            <a href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="burger-menu__item"><a href="#">Продавцам техники</a></li>
+          <li class="burger-menu__item"><a href="#">Партнерам</a></li>
+          <li class="burger-menu__item"><a href="#">Производителям</a></li>
+          <li class="burger-menu__item">
+            <a href="#">Наши сервисные центры</a>
+          </li>
+          <li class="burger-menu__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="feedback-aicon">
+          <ul class="feedback-aicon__list">
+            <li class="feedback-aicon__item feedback-aicon__item--phone"></li>
+            <li class="feedback-aicon__item feedback-aicon__item--message"></li>
+            <li class="feedback-aicon__item feedback-aicon__item--contact"></li>
+          </ul>
+        </div>
+        <div class="burger-menu__email">
+          <a href="mailto:mail@cps.com">mail@cps.com</a>
+        </div>
+        <div class="burger-menu__phone">
+          <a href="tel:8 800 890 8900">8 800 890 8900</a>
+        </div>
+        <ul class="burger-menu__lang-list">
+          <li class="burger-menu__lang-item"><button>RU</button></li>
+          <li class="burger-menu__lang-item"><button>EN</button></li>
+          <li class="burger-menu__lang-item"><button>CH</button></li>
+        </ul>
+      </div>
       <section class="about">
         <div class="about__wrapper conteiner">
           <div class="about__header">
             <h1 class="about__title">Услуги и сервисы</h1>
             <ul class="modal-icon about__icon-list">
               <li class="modal-icon__icon-item modal-icon__icon-item--tools">
-                <span> Оставить заявку</span>
+                <button>Оставить заявку</button>
               </li>
               <li class="modal-icon__icon-item modal-icon__icon-item--check">
-                <span>Статус ремонта</span>
+                <button>Статус ремонта</button>
               </li>
             </ul>
           </div>
