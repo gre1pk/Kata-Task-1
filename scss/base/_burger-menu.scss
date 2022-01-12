@@ -36,6 +36,7 @@
   }
   &__item {
     padding-bottom: 24px;
+    position: relative;
     &:hover {
       opacity: 0.4;
     }
@@ -43,6 +44,20 @@
     & a {
       letter-spacing: -0.2px;
       color: $text-color;
+    }
+    &--active {
+      &::before {
+        content: '';
+        border-left: 4px solid $border-color;
+        height: 32px;
+        border-radius: 0 4px 4px 0;
+        left: -25px;
+        top: -8px;
+        position: absolute;
+      }
+      & a {
+        opacity: 0.6;
+      }
     }
   }
   &__item:last-child {
