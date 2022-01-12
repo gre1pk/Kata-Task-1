@@ -61,6 +61,7 @@ button {
   border: none;
   background-color: #ffffff;
   padding: 0;
+  cursor: pointer;
 }
 
 .burger {
@@ -73,14 +74,15 @@ button {
 }
 
 .burger-menu {
+  display: none;
   position: absolute;
   background-color: #ffffff;
   width: 320px;
   z-index: 10;
   top: 0;
   left: 0;
-  -webkit-box-shadow: 0 0 0 100vh rgba(255, 255, 255, 0.9);
-          box-shadow: 0 0 0 100vh rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
 }
 
 .burger-menu__wrapper {
@@ -113,6 +115,10 @@ button {
 
 .burger-menu__item {
   padding-bottom: 24px;
+}
+
+.burger-menu__item:hover {
+  opacity: 0.4;
 }
 
 .burger-menu__item a {
@@ -296,16 +302,14 @@ button {
             justify-content: space-between;
     width: 400px;
   }
-  .about__icon-list li {
+  .about__icon-list button {
+    background-color: #f8f8f8;
     font-size: 16px;
     line-height: 24px;
     width: 176px;
     padding-right: 40px;
     background-repeat: no-repeat;
     background-position: right;
-  }
-  .about__icon-list li span {
-    vertical-align: sub;
   }
 }
 

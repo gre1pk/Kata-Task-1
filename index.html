@@ -10,24 +10,36 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <button class="burger modal-icon__icon-item"></button>
+        <button type="button" class="burger modal-icon__icon-item"></button>
         <a class="page-header__logo"
           ><img height="50" src="./assets/img/logo.svg" alt="logo"
         /></a>
-        <ul class="page-header__icon-list modal-icon">
-          <li class="modal-icon__icon-item modal-icon__icon-item--tools"></li>
-          <li class="modal-icon__icon-item modal-icon__icon-item--check"></li>
-        </ul>
+        <div class="page-header__icon-list modal-icon">
+          <button
+            type="button"
+            class="modal-icon__icon-item modal-icon__icon-item--tools"
+          ></button>
+          <button
+            type="button"
+            class="modal-icon__icon-item modal-icon__icon-item--check"
+          ></button>
+        </div>
       </div>
     </header>
     <main class="page__main">
-      <div class="burger-menu burger-menu__wrapper">
+      <div class="burger-menu burger-menu__wrapper active">
         <div class="burger-menu__header">
-          <button class="burger-menu__close modal-icon__icon-item"></button>
+          <button
+            type="button"
+            class="burger-menu__close modal-icon__icon-item"
+          ></button>
           <a class="burger-menu__logo"
             ><img height="50" src="./assets/img/logo.svg" alt="logo"
           /></a>
-          <button class="burger-menu__search modal-icon__icon-item"></button>
+          <button
+            type="button"
+            class="burger-menu__search modal-icon__icon-item"
+          ></button>
         </div>
         <ul class="burger-menu__list">
           <li class="burger-menu__item burger-menu__item--active">
@@ -59,9 +71,15 @@
           <a href="tel:8 800 890 8900">8 800 890 8900</a>
         </div>
         <ul class="burger-menu__lang-list">
-          <li class="burger-menu__lang-item"><button>RU</button></li>
-          <li class="burger-menu__lang-item"><button>EN</button></li>
-          <li class="burger-menu__lang-item"><button>CH</button></li>
+          <li class="burger-menu__lang-item">
+            <button type="button">RU</button>
+          </li>
+          <li class="burger-menu__lang-item">
+            <button type="button">EN</button>
+          </li>
+          <li class="burger-menu__lang-item">
+            <button type="button">CH</button>
+          </li>
         </ul>
       </div>
       <section class="about">
@@ -69,12 +87,18 @@
           <div class="about__header">
             <h1 class="about__title">Услуги и сервисы</h1>
             <ul class="modal-icon about__icon-list">
-              <li class="modal-icon__icon-item modal-icon__icon-item--tools">
-                <button>Оставить заявку</button>
-              </li>
-              <li class="modal-icon__icon-item modal-icon__icon-item--check">
-                <button>Статус ремонта</button>
-              </li>
+              <button
+                type="button"
+                class="modal-icon__icon-item modal-icon__icon-item--tools"
+              >
+                Оставить заявку
+              </button>
+              <button
+                type="button"
+                class="modal-icon__icon-item modal-icon__icon-item--check"
+              >
+                Статус ремонта
+              </button>
             </ul>
           </div>
           <ul class="about__services-list">
