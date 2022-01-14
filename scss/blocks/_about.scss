@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__title {
     font-family: $font-bold;
     font-size: 28px;
@@ -20,16 +21,20 @@
       border-radius: 0 4px 4px 0;
       left: -16px;
       position: absolute;
+
       @include media-tablet {
         left: -24px;
       }
+
       @include media-notbook {
         left: -34px;
       }
     }
   }
+
   &__icon-list {
     display: none;
+
     @include media-notbook {
       display: flex;
       justify-content: space-between;
@@ -46,12 +51,24 @@
       }
     }
   }
+
+  &__icon-item {
+    &--tools {
+      background-image: url(../assets/img/ic/repair.svg);
+    }
+
+    &--check {
+      background-image: url(../assets/img/ic/checkstatus.svg);
+    }
+  }
+
   &__services-list {
     display: flex;
     overflow-x: scroll;
     font-size: 16px;
     margin: 0 0 24px;
     color: $grey-text-color;
+
     @include media-notbook {
       overflow-x: inherit;
       flex-wrap: wrap;
@@ -59,6 +76,7 @@
   }
 
   &__services-item {
+    color: $grey-text-color;
     margin-right: 20px;
     white-space: nowrap;
     padding: 8px;
@@ -71,12 +89,14 @@
       cursor: pointer;
     }
   }
-  &__conteiner {
+
+  &__container {
     @include media-tablet {
       display: flex;
       justify-content: space-between;
     }
   }
+
   &__text {
     font-size: 14px;
     margin: 0 0 16px;
@@ -85,9 +105,11 @@
       width: 50%;
       line-height: 20px;
     }
+
     &--top {
       margin-bottom: 30px;
     }
+
     &--middle {
       display: none;
 
@@ -95,24 +117,25 @@
         display: inline;
         width: 100%;
       }
-      @include media-notbook {
-      }
     }
 
     &--bottom {
       visibility: hidden;
       display: none;
+
       @include media-notbook {
         visibility: visible;
         display: inline;
       }
     }
   }
+
   &__further {
     display: block;
     margin: 16px 0 16px 32px;
     font-size: 16px;
     line-height: 24px;
+    background-color: inherit;
 
     &::before {
       content: url(../assets/img/ic/arr.svg);
@@ -122,29 +145,31 @@
 
   &__img {
     position: relative;
-    height: 230px;
+    height: 176px;
+
     @include media-tablet {
-      height: 260px;
+      height: 208px;
       flex-grow: 2;
       margin-left: 48px;
+      margin-bottom: 32px;
     }
+
     @include media-notbook {
+      height: 307px;
       margin-left: 36px;
       margin-bottom: 50px;
     }
+
     & img {
       width: 100vw;
-      max-height: 230px;
+      height: 100%;
       position: absolute;
       left: -16px;
+
       @include media-tablet {
         position: static;
         width: 100%;
         border-radius: 6px;
-        height: 260px;
-      }
-      @include media-notbook {
-        max-height: 307px;
       }
     }
   }

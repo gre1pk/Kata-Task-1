@@ -1,20 +1,19 @@
-.feedback-aicon {
-  &__list {
-    display: flex;
-    justify-content: flex-start;
-  }
+.feedback-icon {
+  display: flex;
+  justify-content: flex-start;
+
   &__item {
-    width: 40px;
-    height: 40px;
     margin-right: 16px;
     cursor: pointer;
 
     &--phone {
       background-image: url(../assets/img/ic/call.svg);
     }
+
     &--message {
       background-image: url(../assets/img/ic/chat.svg);
     }
+
     &--contact {
       background-image: url(../assets/img/ic/profile.svg);
     }

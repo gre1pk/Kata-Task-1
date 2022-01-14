@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -18,17 +19,21 @@ ul {
   list-style: none;
   margin: 0;
 }
+
 p {
   padding: 0;
   margin: 0;
 }
+
 h1 {
   padding: 0;
   margin: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 button {
   border: none;
   background-color: $lite-color;
