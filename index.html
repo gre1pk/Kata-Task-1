@@ -10,36 +10,30 @@
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <button type="button" class="burger modal-icon__icon-item"></button>
-        <a class="page-header__logo"
+        <button type="button" class="page-header__burger icon"></button>
+        <a href="/" class="page-header__logo"
           ><img height="50" src="./assets/img/logo.svg" alt="logo"
         /></a>
-        <div class="page-header__icon-list modal-icon">
+        <div class="page-header__icon-list">
           <button
             type="button"
-            class="modal-icon__icon-item modal-icon__icon-item--tools"
+            class="page-header__icon-item page-header__icon-item--tools icon"
           ></button>
           <button
             type="button"
-            class="modal-icon__icon-item modal-icon__icon-item--check"
+            class="page-header__icon-item page-header__icon-item--check icon"
           ></button>
         </div>
       </div>
     </header>
-    <main class="page__main">
-      <div class="burger-menu burger-menu__wrapper active">
+    <main class="main">
+      <div class="burger-menu burger-menu__wrapper">
         <div class="burger-menu__header">
-          <button
-            type="button"
-            class="burger-menu__close modal-icon__icon-item"
-          ></button>
+          <button type="button" class="burger-menu__close icon"></button>
           <a class="burger-menu__logo"
             ><img height="50" src="./assets/img/logo.svg" alt="logo"
           /></a>
-          <button
-            type="button"
-            class="burger-menu__search modal-icon__icon-item"
-          ></button>
+          <button type="button" class="burger-menu__search icon"></button>
         </div>
         <ul class="burger-menu__list">
           <li class="burger-menu__item burger-menu__item--active">
@@ -57,12 +51,19 @@
           </li>
           <li class="burger-menu__item"><a href="#">Контакты</a></li>
         </ul>
-        <div class="feedback-aicon">
-          <ul class="feedback-aicon__list">
-            <li class="feedback-aicon__item feedback-aicon__item--phone"></li>
-            <li class="feedback-aicon__item feedback-aicon__item--message"></li>
-            <li class="feedback-aicon__item feedback-aicon__item--contact"></li>
-          </ul>
+        <div class="burger-menu__feedback feedback-icon">
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--phone icon"
+          ></button>
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--message icon"
+          ></button>
+          <button
+            type="button"
+            class="feedback-icon__item feedback-icon__item--contact icon"
+          ></button>
         </div>
         <div class="burger-menu__email">
           <a href="mailto:mail@cps.com">mail@cps.com</a>
@@ -83,33 +84,41 @@
         </ul>
       </div>
       <section class="about">
-        <div class="about__wrapper conteiner">
+        <div class="about__wrapper container">
           <div class="about__header">
             <h1 class="about__title">Услуги и сервисы</h1>
-            <ul class="modal-icon about__icon-list">
+            <ul class="about__icon-list">
               <button
                 type="button"
-                class="modal-icon__icon-item modal-icon__icon-item--tools"
+                class="about__icon-item about__icon-item--tools icon"
               >
                 Оставить заявку
               </button>
               <button
                 type="button"
-                class="modal-icon__icon-item modal-icon__icon-item--check"
+                class="about__icon-item about__icon-item--check icon"
               >
                 Статус ремонта
               </button>
             </ul>
           </div>
           <ul class="about__services-list">
-            <li class="about__services-item">Ремонтируемые устройства</li>
-            <li class="about__services-item">Дополнительные услуги</li>
-            <li class="about__services-item">Цены на услуги</li>
-            <li class="about__services-item">Адреса сервисных центров</li>
-            <li class="about__services-item">Специальные цены</li>
-            <li class="about__services-item">Отзывы</li>
+            <li class="about__services-item">
+              <a href="/">Ремонтируемые устройства</a>
+            </li>
+            <li class="about__services-item">
+              <a href="/">Дополнительные услуги</a>
+            </li>
+            <li class="about__services-item"><a href="/">Цены на услуги</a></li>
+            <li class="about__services-item">
+              <a href="/">Адреса сервисных центров</a>
+            </li>
+            <li class="about__services-item">
+              <a href="/">Специальные цены</a>
+            </li>
+            <li class="about__services-item"><a href="/">Отзывы</a></li>
           </ul>
-          <div class="about__conteiner">
+          <div class="about__container">
             <div class="about__text">
               <p class="about__text--top">
                 Мы являемся авторизованным сервисным центром по ремонту техники
@@ -125,7 +134,7 @@
                 гордимся тем, что к нам обращаются по рекомендациям и, в свою
                 очередь, советуют нас родным и близким.
               </p>
-              <span class="about__further">Читать далее</span>
+              <button type="button" class="about__further">Читать далее</button>
             </div>
             <div class="about__img">
               <img src="./assets/img/service.jpg" alt="service" height="176" />
@@ -135,5 +144,7 @@
       </section>
     </main>
     <footer class="page-footer"></footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
