@@ -25,6 +25,10 @@
     flex-grow: 2;
     max-width: 120px;
     margin: 0 auto 0 0;
+
+    :hover {
+      opacity: 0.5;
+    }
   }
 
   &__icon-list {
@@ -47,7 +51,7 @@
     &--tools {
       background-image: url(../assets/img/ic/repair.svg);
     }
-    
+
     &--check {
       background-image: url(../assets/img/ic/checkstatus.svg);
     }

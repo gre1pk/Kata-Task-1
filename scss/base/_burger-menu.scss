@@ -41,6 +41,7 @@
   &__item {
     padding-bottom: 24px;
     position: relative;
+
     &:hover {
       opacity: 0.4;
     }
@@ -82,6 +83,7 @@
 
   &__phone {
     margin-top: 12px;
+
     & a {
       font-family: $font-bold;
       font-weight: bold;
