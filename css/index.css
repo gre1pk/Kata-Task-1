@@ -66,11 +66,23 @@ button {
 }
 
 .burger-menu.active {
-  display: block;
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .burger-menu {
-  display: none;
+  -webkit-transition: 1s -webkit-transform;
+  transition: 1s -webkit-transform;
+  transition: 1s transform;
+  transition: 1s transform, 1s -webkit-transform;
+  -webkit-transform: translateX(-360px);
+          transform: translateX(-360px);
   position: absolute;
   background-color: #ffffff;
   width: 320px;
@@ -78,8 +90,6 @@ button {
   z-index: 10;
   top: 0;
   left: 0;
-  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
-          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
 }
 
 .burger-menu__wrapper {
