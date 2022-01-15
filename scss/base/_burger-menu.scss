@@ -1,9 +1,13 @@
 .burger-menu.active {
-  display: block;
+  transition: 1s transform;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+  16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+  transform: translateX(0);
 }
 
 .burger-menu {
-  display: none;
+  transition: 1s transform;
+  transform: translateX(-360px);
   position: absolute;
   background-color: $lite-color;
   width: 320px;
@@ -11,8 +15,6 @@
   z-index: 10;
   top: 0;
   left: 0;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
 
   &__wrapper {
     padding: 18px 24px 32px;
