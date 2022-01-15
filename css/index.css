@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "TTLakes-Medium";
+  font-family: 'TTLakes-Medium';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "TTLakes-Bold";
+  font-family: 'TTLakes-Bold';
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "TTLakes-Regular";
+  font-family: 'TTLakes-Regular';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -251,6 +251,10 @@ button {
           flex-grow: 2;
   max-width: 120px;
   margin: 0 auto 0 0;
+}
+
+.page-header__logo :hover {
+  opacity: 0.5;
 }
 
 .page-header__icon-list {
