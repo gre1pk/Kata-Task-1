@@ -106,5 +106,13 @@
 
   &__lang-item {
     padding-right: 7px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--active button {
+      color: $grey-text-color;
+    }
   }
 }
