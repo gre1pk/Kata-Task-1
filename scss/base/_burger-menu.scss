@@ -1,7 +1,7 @@
 .burger-menu.active {
   transition: 1s transform;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-  16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+    16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9);
   transform: translateX(0);
 }
 
@@ -11,7 +11,6 @@
   position: absolute;
   background-color: $lite-color;
   width: 320px;
-  height: 100vh;
   z-index: 10;
   top: 0;
   left: 0;
@@ -45,6 +44,7 @@
     position: relative;
 
     &:hover {
+      transition: 200ms all;
       opacity: 0.4;
     }
 
@@ -103,5 +103,13 @@
 
   &__lang-item {
     padding-right: 7px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--active button {
+      color: $grey-text-color;
+    }
   }
 }
