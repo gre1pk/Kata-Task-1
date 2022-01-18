@@ -70,8 +70,8 @@ button {
   transition: 1s -webkit-transform;
   transition: 1s transform;
   transition: 1s transform, 1s -webkit-transform;
-  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
-          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 100vw rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9);
+          box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9);
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -125,6 +125,8 @@ button {
 }
 
 .burger-menu__item:hover {
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
   opacity: 0.4;
 }
 
@@ -182,6 +184,14 @@ button {
 
 .burger-menu__lang-item {
   padding-right: 7px;
+}
+
+.burger-menu__lang-item:hover {
+  opacity: 0.5;
+}
+
+.burger-menu__lang-item--active button {
+  color: #7e7e82;
 }
 
 .page {
@@ -250,10 +260,6 @@ button {
           flex-grow: 2;
   max-width: 120px;
   margin: 0 auto 0 0;
-}
-
-.page-header__logo :hover {
-  opacity: 0.5;
 }
 
 .page-header__icon-list {
